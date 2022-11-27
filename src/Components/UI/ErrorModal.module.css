@@ -38,6 +38,15 @@
   display: flex;
   justify-content: flex-end;
 }
+.errorButton{
+  font: inherit;
+  border: 1px solid #f00101;
+  background: #ff0000;
+  color: white;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
 @media (min-width: 768px) {
   .modal {

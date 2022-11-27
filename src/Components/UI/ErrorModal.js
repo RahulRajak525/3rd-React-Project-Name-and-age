@@ -1,5 +1,5 @@
 import React from "react";
-import  ReactDOM  from "react-dom";
+import ReactDOM from "react-dom";
 import Card from "./Card";
 import Button from "./Button";
 import classes from "./ErrorModal.module.css";
@@ -17,7 +17,9 @@ const ModalOverlay = (props) => {
         <p>{props.message}</p>
       </div>
       <footer className={classes.actions}>
-        <Button onClick={props.onConfirm}>Okay</Button>
+        <button className={classes.errorButton} onClick={props.onConfirm}>
+          Okay
+        </button>
       </footer>
     </Card>
   );
